@@ -1,0 +1,53 @@
+// Navbar/Header
+#main-nav {
+  box-shadow: inset 0 0 10px rgba(black, 0.5);
+
+  .navbar-brand {
+    color: #f2f2f2;
+    font-family: 'Pirata One', cursive;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+
+  li {
+    &:hover {
+      background: rgba(black, 0.25);
+    }
+    a {
+      color: white;
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }// /<a>
+
+    &.current-menu-item {
+      a {
+        color: $color-green;
+        background: rgba(black, 0.25);
+      }
+    }
+
+    // icons for phone and instagram
+    &.nav-icon a {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-indent: -999em;
+      width: 2rem;
+      height: 2rem;
+      overflow: hidden;
+    }
+
+    &.nav-icon--instagram a {
+      background-image: url(./img/instagram.svg);
+    }
+
+    &.nav-icon--phone a {
+      background-image: url(./img/mobile.svg);
+    }
+  }
+
+}// /#main-nav

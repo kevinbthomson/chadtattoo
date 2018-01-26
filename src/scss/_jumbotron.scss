@@ -1,0 +1,40 @@
+// Jumbotron
+.jumbotron {
+  background: $color-green url(./img/jumbotron-bg.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  box-shadow: inset 0px 11px 8px -10px rgba(black, 0.5),
+    inset 0px -11px 8px -10px rgba(black, 0.5);
+  margin-bottom: 0;
+  text-align: center;
+
+  @media only screen and (min-width : $break-md) {
+    background-image: url(./img/jumbotron-bg-md.jpg);
+  }
+
+  h1 {
+    color: $color-green--dark;
+    text-shadow: 0 0 4px white,
+      0 0 5px rgba(black, 0.5);
+  }
+
+  #profile-pic {
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(black, 0.5);
+    margin: auto;
+    display: block;
+    width: 128px;
+    height: 128px;
+  }
+
+  p {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(black, 0.5);
+
+    @media only screen and (min-width : $break-md) {
+      color: $color-green--dark;
+      text-shadow: 0 1px 0 white;
+    }
+  }
+}

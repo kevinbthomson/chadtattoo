@@ -1,0 +1,63 @@
+// Sections
+section, article {
+  background: white;
+  padding: 2rem 0;
+  min-height: 300px;
+
+// Portfolio
+  &#section--portfolio {
+    background: #f2f2f2;
+
+    .portfolio-thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+
+      a {
+        background: #333;
+        border: 4px solid white;
+        box-shadow: $box-shadow;
+        width: 31%;
+        height: 5rem;
+        margin: 1%;
+        overflow: hidden;
+        position: relative;
+
+        @media only screen and (min-width : $break-sm) {
+          width: 6rem;
+          height: 6rem;
+        }
+
+        @media only screen and (min-width : $break-md) {
+          width: 6rem;
+          height: 6rem;
+        }
+
+        img {
+          width: 100%;
+          min-width: 100%;
+          height: auto;
+          margin: 0;
+          padding: 0;
+        }// /img
+      }// /a
+    }// /.portfolio-thumbnails
+  }// /#section--portfolio
+
+  &#section--contact {
+    background: $color-green;
+    box-shadow: inset 0px 11px 8px -10px rgba(black, 0.5);
+
+    .contact-info {
+      background: url(img/mammoth-skull.png) center center no-repeat;
+    }
+  }// /#section--contact
+
+}// /section
+
+// Google map for Mammoth Tattoo
+iframe {
+  width: 100%;
+  min-height: 272px;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+}

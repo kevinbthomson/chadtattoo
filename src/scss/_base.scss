@@ -1,0 +1,27 @@
+// Base Styles
+body {
+  background: #333;
+}
+
+h1, h2 {
+  color: $color-green--dark;
+  font-family: 'Trade Winds', cursive;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Pirata One', cursive;
+}
+
+h4 {
+  font-family: 'Pirata One', cursive;
+
+  a {
+    color: #333;
+  }
+}
+
+.btn-primary {
+    background-color: $color-green--dark;
+    border-color: $color-green;
+}
