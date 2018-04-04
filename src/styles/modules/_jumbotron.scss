@@ -8,7 +8,7 @@
   margin-bottom: 0;
   text-align: center;
 
-  @media only screen and (min-width : $break-md) {
+  @include breakpoint(md) {
     background-image: url(./img/jumbotron-bg-md.jpg);
   }
 
@@ -18,13 +18,19 @@
       0 0 5px rgba(black, 0.5);
   }
 
-  #profile-pic {
-    border: 2px solid white;
+  .profile-pic {
+    border: 5px solid white;
     box-shadow: 0 2px 5px rgba(black, 0.5);
-    margin: auto;
+    margin: 0 auto 15px auto;
     display: block;
-    width: 128px;
-    height: 128px;
+    width: 148px;
+    height: 148px;
+    transform: rotate(-8deg);
+
+    @include breakpoint(md) {
+      width: 240px;
+      height: 240px;
+    }
   }
 
   p {
@@ -32,9 +38,13 @@
     font-weight: bold;
     text-shadow: 0 1px 0 rgba(black, 0.5);
 
-    @media only screen and (min-width : $break-md) {
+    @include breakpoint(md) {
       color: $color-green--dark;
       text-shadow: 0 1px 0 white;
     }
+  }
+
+  .lightwidget__link {
+    border: 2px solid white !important;
   }
 }

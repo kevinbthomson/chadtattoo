@@ -1,0 +1,25 @@
+/*!
+Theme Name: Chad Stewart Tattoo Portfolio Theme
+Author: Kevin Thomson @kevinbthomson
+Author URI: http://kevinbthomson.com/
+Description: Portfolio/Contact theme for Chad Stewart based on bootstrap v4
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import './../../node_modules/bootstrap/scss/bootstrap';
+
+@import './base/config';
+@import './base/mixins';
+@import './base/base';
+@import './modules/header';
+@import './modules/jumbotron';
+@import './modules/main';
+@import './modules/portfolio';
+@import './modules/post';
+@import './modules/footer';
+@import './modules/homepage-posts';
+
+@import './vendor/contact-form';
+@import './vendor/lightbox';

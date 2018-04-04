@@ -16,41 +16,33 @@
 	add_theme_support( 'menus' );
 	add_theme_support( 'post-thumbnails' );
 
-	function wpt_excerpt_length( $length ) {
-		return 16;
-	}
-	add_filter( 'excerpt_length', 'wpt_excerpt_length', 999 );
+  function chadtattooFeatures() {
 
-	function register_theme_menus() {
-		register_nav_menus(
-			array(
-				'main-menu' => __( 'Main Menu', 'chadtattoo' )
-			)
-		);
-	}
-	add_action( 'init', 'register_theme_menus' );
+    add_theme_support('title-tag');
 
-	function wpt_create_widget( $name, $id, $description ) {
-		register_sidebar(array(
-			'name' => __( $name ),
-			'id' => $id,
-			'description' => __( $description ),
-			'before_widget' => '<div class="widget">',
-			'after_widget' => '</div>',
-			'before_title' => '<h2 class="module-heading">',
-			'after_title' => '</h2>'
-		));
-	}
+    // featured images for blog posts
+    add_theme_support('post-thumbnails');
+    
+    
+    // add_image_size('pageBanner', 1500, 350, true);
+  }
+  
+  add_action('after_setup_theme', 'chadtattooFeatures');
+	
 
-	wpt_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
-
-	function wpt_theme_styles() {
+  // CSS
+	function chadtattoo_theme_styles() {
+    wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Pirata+One|Trade+Winds' );
 		wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 	}
-	add_action( 'wp_enqueue_scripts', 'wpt_theme_styles' );
 
-	function wpt_theme_js() {
-    wp_enqueue_script( 'jquery_js', 'https://code.jquery.com/jquery-3.1.1.slim.min.js', '', true);
+	add_action( 'wp_enqueue_scripts', 'chadtattoo_theme_styles' );
+
+  // Javascript
+	function chadtattoo_theme_js() {
+    wp_deregister_script('jquery');
+    
+    wp_enqueue_script( 'jquery_js', 'https://code.jquery.com/jquery-3.3.1.min.js', '', true);
 
     wp_enqueue_script( 'tether_js', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', '', true);
 
@@ -58,11 +50,10 @@
 
     wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
 
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/js/lightbox.js', '', true );
+
 	}
-	add_action( 'wp_enqueue_scripts', 'wpt_theme_js' );
 
-
-
-
+	add_action( 'wp_enqueue_scripts', 'chadtattoo_theme_js' );
 
 ?>

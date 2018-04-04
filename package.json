@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "template/wordpress theme for Chad Gordon Stewart tattoo portfolio website",
   "main": "index.js",
-  "scripts": {
-    "start": "npm-run-all --parallel dev:*",
-    "dev:sass-dev": "node-sass --watch src/scss --output-style compressed --source-map true  src/scss/style.scss --output .",
-    "build": "npm-run-all prod:*",
-    "prod:sass-dev": "node-sass --output-style compressed src/scss/style.scss --output ."
-  },
   "author": "@kevinbthomson",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.5.2",
-    "npm-run-all": "^4.0.2"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0"
   }
 }

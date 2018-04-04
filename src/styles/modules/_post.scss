@@ -1,0 +1,35 @@
+.post-meta {
+  list-style: none;
+  padding: 0;
+
+  li {
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(black, 0.25);
+    display: inline-block;
+    margin: 0 2px 0 0;
+    padding: 2px 6px;
+    background-color: $color-green;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+
+  .author {
+
+  }
+
+  .cat {
+
+  }
+
+  .date {
+
+  }
+}// /.post-meta
+
+.post-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}

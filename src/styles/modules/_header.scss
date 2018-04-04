@@ -1,27 +1,50 @@
 // Navbar/Header
 #main-nav {
   box-shadow: inset 0 0 10px rgba(black, 0.5);
+  padding: .5rem 0;
+
+  @include breakpoint(sm) {
+    padding: .5rem 1rem;
+  }
 
   .navbar-brand {
     color: #f2f2f2;
     font-family: 'Pirata One', cursive;
     font-size: 2rem;
     line-height: 1;
+    padding-left: 1rem;
+
+    @include breakpoint(sm) {
+      padding-left: 0;
+    }
   }
 
 
-  li {
+  .navbar-toggler {
+    border: none;
+  }
+
+
+  .nav-item {
+    border-radius: 3px;
+    transition: background .4s ease-out;
+    
     &:hover {
       background: rgba(black, 0.25);
+      box-shadow: inset 0 0 5px rgba(black, 0.25);
     }
+    
     a {
+      // font-family: 'Pirata One', cursive;
       color: white;
       display: block;
+      padding-left: 15px;
+      padding-right: 15px;
 
       &:hover {
         text-decoration: none;
       }
-    }// /<a>
+    }
 
     &.current-menu-item {
       a {
@@ -29,25 +52,8 @@
         background: rgba(black, 0.25);
       }
     }
-
-    // icons for phone and instagram
-    &.nav-icon a {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      text-indent: -999em;
-      width: 2rem;
-      height: 2rem;
-      overflow: hidden;
-    }
-
-    &.nav-icon--instagram a {
-      background-image: url(./img/instagram.svg);
-    }
-
-    &.nav-icon--phone a {
-      background-image: url(./img/mobile.svg);
-    }
   }
 
 }// /#main-nav
+
+Set a realistic amount of BEERS before going out

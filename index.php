@@ -1,24 +1,45 @@
-<?php get_header(); ?>
+<?php
+  get_header();
+?>
 
-<section>
+<section id="section--news" class="news">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <h1>News &amp; Events</h1>
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php 
+          while (have_posts()) {
+            the_post(); ?>
+            <div class="post-item">
+              <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-        <h1><?php the_title(); ?></h1>
+              <ul class="post-meta">
+                <li class="author">by <?php the_author_posts_link(); ?></li>
+                <li class="cat">in <?php the_category( ', ' ); ?></li>
+                <li class="date">on <?php the_time('F j, Y'); ?></li>
+              </ul>
 
-        <?php the_content(); ?>
+              <div class="generic-content">
+                
+                <?php the_excerpt(); ?>
+                
+                <p>
+                  <a class="btn btn-primary btn-sm" href="<?php the_permalink(); ?>">Continue reading</a>
+                </p>
+              </div>
+            </div>
+          <?php }
 
-        <?php endwhile; else : ?>
+          echo paginate_links();
+        ?>
 
-          <p><?php _e( 'Sorry, page found.', 'treehouse-portfolio' ); ?></p>
-
-        <?php endif; ?>
-
-    </div><!-- /.col-md-12 -->
-  </div><!-- /.container -->
+      </div>
+    </div>
+  </div>
 </section>
 
-<?php get_footer(); ?>
+
+<?php
+  get_footer();
+?>

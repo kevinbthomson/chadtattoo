@@ -1,2 +1,2 @@
 
-$('#menu-main-menu li a').addClass('nav-link');
+// $('.portfolio a').attr('data-lightbox', 'portfolio');

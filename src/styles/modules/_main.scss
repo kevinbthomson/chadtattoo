@@ -9,8 +9,6 @@ section, article {
     background: #f2f2f2;
 
     .portfolio-thumbnails {
-      display: flex;
-      flex-wrap: wrap;
 
       a {
         background: #333;
@@ -22,12 +20,12 @@ section, article {
         overflow: hidden;
         position: relative;
 
-        @media only screen and (min-width : $break-sm) {
+        @include breakpoint(sm) {
           width: 6rem;
           height: 6rem;
         }
 
-        @media only screen and (min-width : $break-md) {
+        @include breakpoint(md) {
           width: 6rem;
           height: 6rem;
         }
@@ -55,7 +53,7 @@ section, article {
 }// /section
 
 // Google map for Mammoth Tattoo
-iframe {
+iframe.iframe__google-map {
   width: 100%;
   min-height: 272px;
   border-radius: 3px;

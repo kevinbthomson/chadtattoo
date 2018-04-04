@@ -1,0 +1,11 @@
+.homepage-portfolio {
+  a {
+    @include breakpoint(sm) {
+      width: 31%;
+    }
+
+    @include breakpoint(md) {
+      width: 31%;
+    }
+  }
+}

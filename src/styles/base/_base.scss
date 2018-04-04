@@ -3,6 +3,10 @@ body {
   background: #333;
 }
 
+a {
+  color: $color-green--dark;
+}
+
 h1, h2 {
   color: $color-green--dark;
   font-family: 'Trade Winds', cursive;
@@ -23,5 +27,9 @@ h4 {
 
 .btn-primary {
     background-color: $color-green--dark;
-    border-color: $color-green;
+    border-color: $color-green--dark;
+
+    &:hover {
+      background-color: $color-green--dark;
+    }
 }
