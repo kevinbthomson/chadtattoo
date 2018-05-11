@@ -9,8 +9,25 @@ a {
 
 h1, h2 {
   color: $color-green--dark;
-  font-family: 'Trade Winds', cursive;
+  // font-family: 'Trade Winds', cursive;
+  font-family: 'Pirata One', cursive;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.75rem;
+
+  @include breakpoint(md) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @include breakpoint(md) {
+    font-size: 2rem;
+  }
 }
 
 h3 {

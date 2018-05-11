@@ -45,6 +45,10 @@ section, article {
     background: $color-green;
     box-shadow: inset 0px 11px 8px -10px rgba(black, 0.5);
 
+    h2 {
+      text-shadow: 0 1px 0 rgba(white, 0.5);
+    }
+
     .contact-info {
       background: url(img/mammoth-skull.png) center center no-repeat;
     }
