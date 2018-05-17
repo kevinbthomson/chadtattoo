@@ -10,9 +10,8 @@
         <h2><?php the_title(); ?></h2>
 
         <ul class="post-meta">
-          <li class="author">by <?php the_author_posts_link(); ?></li>
-          <li class="cat">in <?php the_category( ', ' ); ?></li>
-          <li class="date">on <?php the_time('F j, Y'); ?></li>
+          <li class="cat"><?php the_category( ', ' ); ?></li>
+          <li class="date"><?php the_time('F j, Y'); ?></li>
         </ul>
 
         <?php if( get_the_post_thumbnail() ) : ?>

@@ -41,6 +41,29 @@ h4 {
   }
 }
 
+// Wordpress Image Styles
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.alignleft {
+  margin: 0 1.5rem 1.5rem 0;
+}
+
+img.alignright {
+  margin: 0 0 1.5rem 1.5rem;
+}
+
 .btn-primary {
     background-color: $color-green--dark;
     border-color: $color-green--dark;
