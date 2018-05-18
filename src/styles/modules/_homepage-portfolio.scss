@@ -1,4 +1,6 @@
 .homepage-portfolio {
+  margin-bottom: 1rem;
+  
   a {
     @include breakpoint(sm) {
       width: 31%;

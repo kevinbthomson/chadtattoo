@@ -14,7 +14,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-md">
+      <div class="col-md mb-4 mb-sm-1">
         <h3>Recent Portfolio Photos</h3>
         <div class="portfolio__thumbnails homepage-portfolio clearfix">
           <?php
