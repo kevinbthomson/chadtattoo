@@ -9,10 +9,13 @@
   &.wpcf7-recaptcha {
     border: none;
   }
+}
 
-  &.wpcf7-submit {
-    @extend .btn-primary;
-    padding: 4px 8px;
+.wpcf7-submit {
+  @extend .btn-primary;
+  
+  @include breakpoint(md) {
+    width: auto;
   }
 }
 
