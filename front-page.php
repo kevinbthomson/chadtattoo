@@ -5,11 +5,19 @@
     <div class="bio border">
       <p>Chad Gordon Stewart began his career at Ace Custom Tattoo in Charlotte, North Carolina in 1995.</p>
       <p>Chad moved to Denver, Colorado and worked at Alternative Arts Tattoo. He is currently working at Mammoth American Tattoo with a great crew.</p>
-      <!-- LightWidget WIDGET -->
-      <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/126656ae5c845ac0a3eebf07b6a15fa3.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe> -->
     </div>
   </div>
 </div>
+
+<section class="section__instagram">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="instas"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="container">

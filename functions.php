@@ -17,12 +17,10 @@
 	add_theme_support( 'post-thumbnails' );
 
   function chadtattooFeatures() {
-
     add_theme_support('title-tag');
 
     // featured images for blog posts
     add_theme_support('post-thumbnails');
-    
     
     // add_image_size('pageBanner', 1500, 350, true);
   }
@@ -42,16 +40,17 @@
 	function chadtattoo_theme_js() {
     wp_deregister_script('jquery');
     
-    wp_enqueue_script( 'jquery_js', 'https://code.jquery.com/jquery-3.3.1.min.js', '', true);
+    wp_enqueue_script( 'jquery_js', 'https://code.jquery.com/jquery-3.3.1.min.js', '', '', true);
 
-    wp_enqueue_script( 'tether_js', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', '', true);
+    wp_enqueue_script( 'tether_js', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', '', '', true);
 
-    wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', '', true );
+    wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', '', '', true );
 
-    wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
+    wp_enqueue_script( 'instafetch', 'https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js', '', '', true);
 
-    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/js/lightbox.js', '', true );
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/js/lightbox.js', '', '', true );
 
+    wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', '', '', true);
 	}
 
 	add_action( 'wp_enqueue_scripts', 'chadtattoo_theme_js' );

@@ -24,18 +24,18 @@
       <div class="collapse navbar-collapse" id="navbar-content">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item <?php if (get_post_type() == 'portfolio-photo' OR is_page('portfolio')) echo 'current-menu-item' ?>">
-            <a class="nav-link" href="<?php echo get_post_type_archive_link('portfolio-photo'); ?>"><i class="far fa-images"></i> Portfolio</a>
+            <a class="nav-link" href="<?php echo get_post_type_archive_link('portfolio-photo'); ?>" title="Tattoo Portfolio Photos"><i class="far fa-images"></i> <span class="d-md-none d-lg-inline">Portfolio</span></a>
           </li>
           <li class="nav-item <?php if (!is_front_page() && is_home() OR is_single()) echo 'current-menu-item' ?>">
-            <a class="nav-link" href="<?php echo site_url('/news') ?>"><i class="far fa-newspaper"></i> News &amp; Events</a>
+            <a class="nav-link" href="<?php echo site_url('/news') ?>"><i class="far fa-newspaper" title="News &amp; Events"></i> <span class="d-md-none d-lg-inline">News &amp; Events</span></a>
           </li>
-          <li class="nav-item <?php if (is_page('contact') OR wp_get_post_parent_id(0) == 2) echo 'current-menu-item' ?>"><a class="nav-link" href="<?php echo site_url('/contact') ?>"><i class="far fa-envelope"></i> Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" id="nav-icon--instagram" title="Instagram/theevilseed" href="https://www.instagram.com/theevilseed/"><i class="fab fa-instagram"></i> Instagram</a>
+          <li class="nav-item <?php if (is_page('contact') OR wp_get_post_parent_id(0) == 2) echo 'current-menu-item' ?>"><a class="nav-link" href="<?php echo site_url('/contact') ?>" title="Contact"><i class="far fa-envelope"></i> <span class="d-md-none d-lg-inline">Contact</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="tel:+13034552855" id="nav-icon--phone" title="Call the shop! 303-455-2855"><i class="fas fa-phone"></i> 303-455-2855</a>
+            <a class="nav-link nav-link-icon" id="nav-icon--instagram" title="Instagram/theevilseed" href="https://www.instagram.com/theevilseed/"><i class="fab fa-instagram" title="Instagram"></i> <span class="d-md-none d-lg-inline">Instagram</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="tel:+13034552855" id="nav-icon--phone" title="Call the shop! 303-455-2855"><i class="fas fa-phone"></i> <span class="d-md-none d-lg-inline">303-455-2855</span></a>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->

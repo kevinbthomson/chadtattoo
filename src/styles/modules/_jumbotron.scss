@@ -6,7 +6,7 @@
   box-shadow: inset 0px 11px 8px -10px rgba(black, 0.5),
     inset 0px -11px 8px -10px rgba(black, 0.5);
   margin-bottom: 0;
-  min-height: 500px;
+  min-height: 600px;
   position: relative;
   overflow: hidden;
 
@@ -26,20 +26,31 @@
 
   .bio {
     position: absolute;
-    bottom: -15px;
+    left: 5%;
+    bottom: 0;
     padding: 1rem;
-    width: 300px;
+    width: 90%;
     background: rgba(white, 0.85);
     box-shadow: 0 1px 5px rgba(black, 0.5);
-    transform: rotate(2deg);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+
+    p {
+      margin-bottom: .75em;
+    }
 
     @include breakpoint(md) {
       font-size: 1rem;
       bottom: auto;
-      top: 15px;
+      top: 0px;
       right: 15px;
-      width: 260px;
+      left: auto;
+      padding-bottom: .5rem;
+      width: 280px;
+      transform: rotate(4deg);
+
+      p {
+        margin-bottom: .75em;
+      }
     }
 
     @include breakpoint(lg) {
@@ -66,16 +77,5 @@
       width: 240px;
       height: 240px;
     }
-  }
-
-  p {
-
-    @include breakpoint(md) {
-      
-    }
-  }
-
-  .lightwidget__link {
-    border: 2px solid white !important;
   }
 }

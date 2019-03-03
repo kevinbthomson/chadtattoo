@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 
-<section id="section--portfolio" class="portfolio">
+<section class="section__portfolio portfolio">
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   

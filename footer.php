@@ -1,6 +1,6 @@
 
   <!-- Contact Section -->
-  <section id="section--contact">
+  <section class="section__contact">
     <div class="container">
       <div class="row">
         <div class="col-md-6 contact-info">
@@ -21,7 +21,6 @@
       </div><!-- /.row -->
     </div><!-- /.container -->
   </section>
-
 
   <footer>
     <div class="container">
