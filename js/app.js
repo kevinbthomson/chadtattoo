@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Homepage INstaGrams
   instafetch.init({
-    accessToken: '30999166.1677ed0.8132383d871a42449d60730d69938342',
+    accessToken: '303559480.1677ed0.d1d04d9c97f24330af383e66c7a77451',
     target: 'instas',
     numOfPics: 4,
     caption: true
